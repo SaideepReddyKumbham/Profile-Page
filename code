@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K. Saideep Reddy - Profile</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+            animation: profile-bounce 1.5s ease-in-out infinite;
+        }
+
+        @keyframes profile-bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: orange;
+            text-shadow: 0 0 10px rgba(255, 140, 0, 0.8);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid orange;
+            padding-bottom: 10px;
+            text-align: center;
+            animation: slide-down 1s ease-out;
+        }
+
+        /* Education Section */
+        .education-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fade-in 1.5s ease forwards;
+        }
+
+        .education-item:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .education-item:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        .education-image {
+            width: 120px;
+            height: 90px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animations */
+        @keyframes slide-down {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .education-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .education-image {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="IMG_7389.jpg" alt="Profile Image" class="profile-image">
+        <h1>K. Saideep Reddy</h1>
+        <p>Email: kumbhamsaideepreddy@gmail.com</p> <!-- Replace with actual email if needed -->
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <img src="college.jpg" alt="Your College" class="education-image">
+            <p><strong>College Name</strong><br>
+                Bachelor of Technology in [AI] (2020 - 2024)<br>
+                CGPA: [ 6.2 ]
+            </p>
+        </div>
+        
+        <div class="education-item">
+            <img src="narayana.png" alt="Narayana Junior College" class="education-image">
+            <p><strong>Narayana Junior College</strong><br>
+                Intermediate - TS State Board (Graduated May 2020)<br>
+                CGPA: 9.4 / 10
+            </p>
+        </div>
+        
+        <div class="education-item">
+            <img src="narayana.png" alt="Fiitjee School" class="education-image">
+            <p><strong>Fiitjee World School</strong><br>
+                SSC - AP State Board (Graduated April 2018)<br>
+                CGPA: 9.3 / 10
+            </p>
+        </div>
+        
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><b>Programming Languages:</b> C, C++,python , java </li>
+            <li><b>Technologies:</b> HTML, CSS,javascript</li>
+            <li><b>Soft Skills:</b> good communication, teamwork</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><b>Project Name:</b> Sentimental analysis For Chatgpt:Emotion analysis and classification on various types of Data Sets of stories written by authors, developed an
+emotion analysis algorithm utilizing the Twitter-RoBERTa pre-trained model, enabling fine-grained emotion
+analysis on paragraphs within the text, Acknowledged the potential for further improvements in achieving more
+accurate emotion distribution and capturing the emotions of Indian authors in ChatGPT Generated content.
+Primarily used Python, Matplotlib, seaborn, NLP, Hugging face Models.</li>
+            <li><b>Another Project:</b> Malware analysis using deep learning techniques 2024
+University assignment project
+This project utilizes word embeddings from BERT and Word2Vec to classify malware, leveraging NLP
+techniques. BERT's attention mechanism captures relationships between opcodes within malware families, while
+Word2Vec identifies similarities based on context. Classification employs SVM, Logistic Regression, Random
+Forests, and MLP, comparing accuracy between BERT and Word2Vec embeddings to establish a baseline.</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><b>Internship or Job Title</b> - Wipro Summer Internship (may 2023-july 2023)</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Java Full Stack | Wipro TalentNext
+Introduction to Cloud Computing | Mindluster
+Software Testing | Swayam</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>running</li>
+            <li>watching movies</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>GitHub: <a href="https://github.com/YourGitHub">github.com/YourGitHub</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/YourLinkedIn">linkedin.com/in/YourLinkedIn</a></p>
+    </footer>
+</body>
+
+</html>
